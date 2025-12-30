@@ -50,6 +50,7 @@ Make sure the model files are placed in the correct directory expected by the Dj
                      cd..
                      cd AGROSMART
                      python manage.py runserver 8000
+       
 ---
 
 
