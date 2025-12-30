@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AGROSMART</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'upload.css' %}">
+    <link rel="stylesheet" href="{% static 'animate.css' %}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">AGROSMART</div>
+
+    <div class="nav-links">
+        <a href="{% url 'upload_and_predict' %}">Home</a>
+        <a href="{% url 'vision' %}">Vision</a>
+        <a href="{% url 'feedback' %}">Feedback</a>
+        <a href="{% url 'about' %}">About Us</a>
+    </div>
+
+    <div class="auth-btn">Login / Signup</div>
+
+    <div class="lang-toggle">
+        <button class="lang-btn en active" id="en-btn">EN</button>
+        <button class="lang-btn hi" id="hi-btn">हिंदी</button>
+    </div>
+
+    <!-- Floating leaves -->
+    <div class="leaf leaf1"></div>
+    <div class="leaf leaf2"></div>
+    <div class="leaf leaf3"></div>
+</nav>
+
+{% block content %}{% endblock %}
+<script src="{% static 'lang.js' %}"></script>
+</body>
+</html>

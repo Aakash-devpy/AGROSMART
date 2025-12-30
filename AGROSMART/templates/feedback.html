@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="stage fade-up">
+    <section class="results-section feedback-entropy">
+
+        <!-- Left Big Card -->
+        <div class="card feedback-card feedback-intro">
+            <h3>We Grow With Feedback </h3>
+
+            <p data-en="AGROSMART is built for farmers, students, and the future of agriculture."
+               data-hi="AGROSMART किसानों, छात्रों और कृषि के भविष्य के लिए बनाया गया है।">
+                AGROSMART is built for farmers, students, and the future of agriculture.
+            </p>
+
+            <p data-en="Your feedback helps this project evolve, improve, and become more useful."
+               data-hi="आपकी प्रतिक्रिया इस परियोजना को बेहतर और अधिक उपयोगी बनाती है।">
+                Your feedback helps this project evolve, improve, and become more useful.
+            </p>
+
+            <span class="soft-note">
+                 Every suggestion matters.
+            </span>
+        </div>
+
+        <!-- Right Small Highlight Card -->
+        <div class="card feedback-card feedback-highlight">
+            <h4>Why Feedback?</h4>
+            <p>
+                Real users → Real improvements → Real impact 
+            </p>
+        </div>
+
+        <!-- Center Form Card (Main Focus) -->
+        <div class="card feedback-card feedback-form-card">
+            <h3>Share Your Thoughts 💬</h3>
+
+            {% if messages %}
+                {% for msg in messages %}
+                    <p class="success">{{ msg }}</p>
+                {% endfor %}
+            {% endif %}
+
+            <form method="POST">
+                {% csrf_token %}
+
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Write your feedback here..." required></textarea>
+
+                <button class="predict-btn" type="submit">
+                    Send Feedback 
+                </button>
+            </form>
+        </div>
+
+        <!-- Bottom Right Personality Card -->
+        <div class="card feedback-card feedback-maker">
+            <h4>About the Maker</h4>
+            <p>
+                Made with passion by <strong>Aakash</strong>,<br>
+                Class 11th “A”
+            </p>
+            <p class="muted">
+                PM Shri Kendriya Vidyalaya Bairagarh<br>
+                25 December 2025
+            </p>
+        </div>
+
+    </section>
+</div>
+
+{% endblock %}

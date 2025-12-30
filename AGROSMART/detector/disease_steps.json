@@ -1,0 +1,198 @@
+{
+  "Apple___Apple_scab": {
+    "en": {
+      "plant": ["Remove infected leaves", "Prune regularly"],
+      "soil": ["Ensure proper drainage", "Add compost"],
+      "fertilizers": ["Use balanced NPK fertilizers"],
+      "pesticides": ["Apply fungicide spray as recommended"]
+    },
+    "hi": {
+      "plant": ["संक्रमित पत्ते हटाएँ", "नियमित छंटाई करें"],
+      "soil": ["सही जल निकासी सुनिश्चित करें", "खाद डालें"],
+      "fertilizers": ["संतुलित NPK खाद का उपयोग करें"],
+      "pesticides": ["अनुशंसित कवकनाशी का छिड़काव करें"]
+    }
+  },
+  "Apple___Black_rot": {
+    "en": {
+      "plant": ["Remove rotted fruit", "Prune infected branches"],
+      "soil": ["Maintain soil moisture", "Add organic matter"],
+      "fertilizers": ["Use potassium-rich fertilizers carefully"],
+      "pesticides": ["Apply fungicides early"]
+    },
+    "hi": {
+      "plant": ["सड़ चुके फल हटाएँ", "संक्रमित शाखाओं की छंटाई करें"],
+      "soil": ["मिट्टी की नमी बनाए रखें", "जैविक पदार्थ डालें"],
+      "fertilizers": ["सावधानी से पोटेशियम युक्त खाद का उपयोग करें"],
+      "pesticides": ["प्रारंभ में कवकनाशी लगाएँ"]
+    }
+  },
+  "Apple___Cedar_apple_rust": {
+    "en": {
+      "plant": ["Remove infected leaves", "Plant resistant varieties"],
+      "soil": ["Ensure good drainage", "Mulch lightly"],
+      "fertilizers": ["Use nitrogen carefully"],
+      "pesticides": ["Spray rust fungicides on schedule"]
+    },
+    "hi": {
+      "plant": ["संक्रमित पत्ते हटाएँ", "प्रतिरोधी किस्में लगाएँ"],
+      "soil": ["अच्छी जल निकासी सुनिश्चित करें", "हल्का मल्च डालें"],
+      "fertilizers": ["नाइट्रोजन का सावधानी से उपयोग करें"],
+      "pesticides": ["निर्धारित समय पर कवकनाशी छिड़कें"]
+    }
+  },
+  "Apple___healthy": {
+    "en": {
+      "plant": ["No action needed, tree is healthy"],
+      "soil": ["Maintain soil fertility"],
+      "fertilizers": ["Use standard fertilizers"],
+      "pesticides": ["No pesticide needed"]
+    },
+    "hi": {
+      "plant": ["कोई कार्रवाई आवश्यक नहीं, पेड़ स्वस्थ है"],
+      "soil": ["मिट्टी की उर्वरता बनाए रखें"],
+      "fertilizers": ["मानक खाद का उपयोग करें"],
+      "pesticides": ["कोई कीटनाशक आवश्यक नहीं"]
+    }
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "en": {
+      "plant": ["Remove infected leaves", "Space plants properly"],
+      "soil": ["Check soil moisture", "Add organic compost"],
+      "fertilizers": ["Use nitrogen fertilizer carefully"],
+      "pesticides": ["Apply recommended fungicide"]
+    },
+    "hi": {
+      "plant": ["संक्रमित पत्तियां हटाएँ", "पौधों के बीच उचित दूरी रखें"],
+      "soil": ["मिट्टी की नमी जांचें", "जैविक खाद डालें"],
+      "fertilizers": ["नाइट्रोजन खाद सावधानी से लगाएँ"],
+      "pesticides": ["अनुशंसित कवकनाशी का प्रयोग करें"]
+    }
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "en": {
+      "plant": ["Remove damaged leaves", "Rotate crops annually"],
+      "soil": ["Ensure good drainage", "Add organic matter"],
+      "fertilizers": ["Balanced NPK fertilizers"],
+      "pesticides": ["Apply recommended fungicides early"]
+    },
+    "hi": {
+      "plant": ["नुकसान वाले पत्ते हटाएँ", "हर साल फसल बदलें"],
+      "soil": ["अच्छी जल निकासी सुनिश्चित करें", "जैविक पदार्थ डालें"],
+      "fertilizers": ["संतुलित NPK खाद"],
+      "pesticides": ["प्रारंभिक चरण में अनुशंसित कवकनाशी लगाएँ"]
+    }
+  },
+  "Corn_(maize)___healthy": {
+    "en": {
+      "plant": ["No action needed, plant is healthy"],
+      "soil": ["Maintain soil fertility"],
+      "fertilizers": ["Standard fertilizers"],
+      "pesticides": ["No pesticide needed"]
+    },
+    "hi": {
+      "plant": ["कोई कार्रवाई आवश्यक नहीं, पौधा स्वस्थ है"],
+      "soil": ["मिट्टी की उर्वरता बनाए रखें"],
+      "fertilizers": ["मानक खाद"],
+      "pesticides": ["कोई कीटनाशक आवश्यक नहीं"]
+    }
+  },
+  "Potato___Early_blight": {
+    "en": {
+      "plant": ["Remove infected leaves", "Avoid overcrowding"],
+      "soil": ["Check moisture", "Apply organic compost"],
+      "fertilizers": ["Use potassium carefully"],
+      "pesticides": ["Spray recommended fungicides"]
+    },
+    "hi": {
+      "plant": ["संक्रमित पत्ते हटाएँ", "भीड़ से बचें"],
+      "soil": ["मिट्टी की नमी जांचें", "जैविक खाद डालें"],
+      "fertilizers": ["सावधानी से पोटेशियम का उपयोग करें"],
+      "pesticides": ["अनुशंसित कवकनाशी छिड़कें"]
+    }
+  },
+  "Potato___Late_blight": {
+    "en": {
+      "plant": ["Remove infected leaves", "Ensure proper spacing"],
+      "soil": ["Improve drainage", "Use compost"],
+      "fertilizers": ["Apply nitrogen carefully"],
+      "pesticides": ["Use recommended fungicides"]
+    },
+    "hi": {
+      "plant": ["संक्रमित पत्ते हटाएँ", "सही दूरी बनाए रखें"],
+      "soil": ["जल निकासी सुधारें", "खाद का प्रयोग करें"],
+      "fertilizers": ["नाइट्रोजन सावधानी से लगाएँ"],
+      "pesticides": ["अनुशंसित कवकनाशी लगाएँ"]
+    }
+  },
+  "Potato___healthy": {
+    "en": {
+      "plant": ["Plant is healthy, no action needed"],
+      "soil": ["Maintain soil fertility"],
+      "fertilizers": ["Standard fertilizers"],
+      "pesticides": ["No pesticide needed"]
+    },
+    "hi": {
+      "plant": ["पौधा स्वस्थ है, कोई कार्रवाई आवश्यक नहीं"],
+      "soil": ["मिट्टी की उर्वरता बनाए रखें"],
+      "fertilizers": ["मानक खाद"],
+      "pesticides": ["कोई कीटनाशक आवश्यक नहीं"]
+    }
+  },
+  "Tomato___Bacterial_spot": {
+    "en": {
+      "plant": ["Remove infected leaves", "Avoid overhead watering"],
+      "soil": ["Ensure proper drainage", "Use compost"],
+      "fertilizers": ["Balanced NPK fertilizers"],
+      "pesticides": ["Apply copper-based bactericides"]
+    },
+    "hi": {
+      "plant": ["संक्रमित पत्ते हटाएँ", "ऊपर से पानी देने से बचें"],
+      "soil": ["सही जल निकासी सुनिश्चित करें", "खाद का उपयोग करें"],
+      "fertilizers": ["संतुलित NPK खाद"],
+      "pesticides": ["तांबे आधारित जीवाणुनाशक लगाएँ"]
+    }
+  },
+  "Tomato___Early_blight": {
+    "en": {
+      "plant": ["Remove infected leaves", "Space plants properly"],
+      "soil": ["Maintain soil moisture", "Add compost"],
+      "fertilizers": ["Use potassium carefully"],
+      "pesticides": ["Spray recommended fungicide"]
+    },
+    "hi": {
+      "plant": ["संक्रमित पत्ते हटाएँ", "पौधों के बीच उचित दूरी रखें"],
+      "soil": ["मिट्टी की नमी बनाए रखें", "खाद डालें"],
+      "fertilizers": ["सावधानी से पोटेशियम का उपयोग करें"],
+      "pesticides": ["अनुशंसित कवकनाशी छिड़कें"]
+    }
+  },
+  "Tomato___Late_blight": {
+    "en": {
+      "plant": ["Remove infected leaves", "Ensure proper airflow"],
+      "soil": ["Improve drainage", "Apply organic matter"],
+      "fertilizers": ["Use nitrogen carefully"],
+      "pesticides": ["Apply recommended fungicides"]
+    },
+    "hi": {
+      "plant": ["संक्रमित पत्ते हटाएँ", "अच्छी हवा प्रवाह सुनिश्चित करें"],
+      "soil": ["जल निकासी सुधारें", "जैविक पदार्थ डालें"],
+      "fertilizers": ["नाइट्रोजन सावधानी से लगाएँ"],
+      "pesticides": ["अनुशंसित कवकनाशी लगाएँ"]
+    }
+  },
+  "Tomato___healthy": {
+    "en": {
+      "plant": ["Plant is healthy, no action needed"],
+      "soil": ["Maintain soil fertility"],
+      "fertilizers": ["Standard fertilizers"],
+      "pesticides": ["No pesticide needed"]
+    },
+    "hi": {
+      "plant": ["पौधा स्वस्थ है, कोई कार्रवाई आवश्यक नहीं"],
+      "soil": ["मिट्टी की उर्वरता बनाए रखें"],
+      "fertilizers": ["मानक खाद"],
+      "pesticides": ["कोई कीटनाशक आवश्यक नहीं"]
+    }
+  }
+}

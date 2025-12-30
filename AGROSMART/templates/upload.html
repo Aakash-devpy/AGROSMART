@@ -1,0 +1,155 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AGROSMART</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'upload.css' %}">
+    <link rel="stylesheet" href="{% static 'animate.css' %}">
+</head>
+
+<body class="{% if top_predictions %}predicted{% endif %}">
+
+<!-- DRAG OVERLAY -->
+<div id="drag-overlay">
+    <div class="overlay-box">
+        <p>Drop leaf image anywhere</p>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">AGROSMART</div>
+
+    <div class="nav-links">
+        <a href="{% url 'upload_and_predict' %}">Home</a>
+        <a href="{% url 'vision' %}">Vision</a>
+        <a href="{% url 'feedback' %}">Feedback</a>
+        <a href="{% url 'about' %}">About Us</a>
+    </div>
+
+    <div class="auth-btn">Login / Signup</div>
+
+    <div class="lang-toggle">
+        <button class="lang-btn en active" id="en-btn">EN</button>
+        <button class="lang-btn hi" id="hi-btn">हिंदी</button>
+    </div>
+
+    <!-- Floating leaves -->
+    <div class="leaf leaf1"></div>
+    <div class="leaf leaf2"></div>
+    <div class="leaf leaf3"></div>
+</nav>
+
+<!-- =======================
+        MAIN STAGE
+======================= -->
+<div class="stage fade-up">
+
+    <!-- LEFT : UPLOAD -->
+    <section class="upload-section">
+
+        <form method="POST" enctype="multipart/form-data" id="upload-form">
+            {% csrf_token %}
+
+            <!-- DROP ZONE -->
+            <div class="drop-zone" id="drop-zone">
+                <input type="file" name="leaf_image" id="leaf_image" accept="image/*" hidden required>
+
+                <div id="preview-wrapper" class="hidden">
+                    <img id="img-preview">
+                    <button type="button" id="remove-img">✕</button>
+                </div>
+
+                <p id="drop-text">
+                    Drag & Drop Leaf Image<br>
+                    <span>or click to upload</span>
+                </p>
+            </div>
+
+            <!-- PREDICT -->
+            <button type="submit" class="predict-btn">
+                Predict Disease
+            </button>
+        </form>
+
+
+    </section>
+
+    <!-- RIGHT : RESULTS -->
+    {% if top_predictions %}
+    <section class="results-section">
+
+        <!-- TOP PREDICTIONS -->
+        <div class="card disease-card">
+            <h3>Top Predictions</h3>
+
+            {% for p in top_predictions %}
+            <div class="prediction-card
+                {% if forloop.first %}
+                    disease-top1
+                {% elif forloop.counter == 2 %}
+                    disease-top2
+                {% else %}
+                    disease-top3
+                {% endif %}
+            ">
+
+                <div class="prediction-header">
+                    <span class="badge
+                        {% if forloop.first %}red
+                        {% elif forloop.counter == 2 %}orange
+                        {% else %}yellow{% endif %}
+                    ">
+                        {% if forloop.first %}Top Risk
+                        {% elif forloop.counter == 2 %}Possible
+                        {% else %}Low Risk{% endif %}
+                    </span>
+
+                    <h4>{{ p.disease }}</h4>
+                </div>
+
+                <p class="confidence-text">
+                    Confidence: <strong>{{ p.confidence|floatformat:2 }}%</strong>
+                </p>
+
+                <div class="confidence-track">
+                    <div class="confidence-fill
+                        {% if forloop.first %}red
+                        {% elif forloop.counter == 2 %}orange
+                        {% else %}yellow{% endif %}
+                    "style="width: {{ p.confidence }}%"></div>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- TREATMENT -->
+        {% if steps %}
+        <div class="card solution-card disease-top1">
+            <h3> Treatment – {{ top_predictions.0.disease }}</h3>
+
+            {% for cat in steps %}
+            <div class="solution-block">
+                <h4>{{ cat.category|capfirst }}</h4>
+                <ul>
+                    {% for en, hi in cat.pairs %}
+                    <li data-en="{{ en }}" data-hi="{{ hi }}">{{ en }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+    </section>
+    {% endif %}
+
+</div>
+
+<script src="{% static 'upload.js' %}"></script>
+</body>
+</html>
